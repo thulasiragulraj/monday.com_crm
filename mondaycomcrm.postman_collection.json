@@ -1,0 +1,1466 @@
+{
+  "info": {
+    "_postman_id": "f362d5b1-6f77-4e27-a0d1-753427bfb4ec",
+    "name": "mondaycomcrm",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "48351098",
+    "_collection_link": "https://go.postman.co/collection/48351098-f362d5b1-6f77-4e27-a0d1-753427bfb4ec?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "apis",
+      "item": [
+        {
+          "name": "auth",
+          "item": [
+            {
+              "name": "register.php",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"Bala\",\r\n  \"email\": \"Bala@mail.com\",\r\n  \"phone\": \"9886553210\",\r\n  \"password\": \"Bala@123\"\r\n  \r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/auth/register.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "auth",
+                    "register.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "login.php",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n      \"email\": \"RagulRaj@mail.com\",\r\n        \"password\": \"Ragul@123\"\r\n\r\n\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/auth/login.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "auth",
+                    "login.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "logout.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "companies",
+          "item": [
+            {
+              "name": "create.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "list.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "view.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "delete.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "update.php",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE0MTMzMTcsImV4cCI6MTc3MTQ5OTcxNywiZGF0YSI6eyJpZCI6MSwibmFtZSI6IlFhZHMiLCJlbWFpbCI6IlFhZHNAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyeSQxMCRPRDVaWkpONTcxS3JZZUtTNHJVNXEucnhLUzFqaVFNT2hlMkh5Ym5QNGZsaGx2d3lOeTVzYSIsInJvbGUiOiJhZG1pbiJ9fQ.IuFuAdRfQm-ObzoXpX3S3QNGECu7h8lyrjo6LkvnGSs",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"id\": 2,\r\n  \"name\": \"ABC Jewellery Updated\",\r\n  \"email\": \"newabc@gmail.com\",\r\n  \"phone\": \"9999999999\",\r\n  \"website\": \"www.newabc.com\",\r\n  \"address\": \"Chennai\",\r\n  \"industry\": \"Jewellery\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/companies/update.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "companies",
+                    "update.php"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "deals",
+          "item": [
+            {
+              "name": "active_deals",
+              "item": [
+                {
+                  "name": "create.php",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE2MDMxODAsImV4cCI6MTc3MTY4OTU4MCwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.7FedhdYmCRqkSPoud_aDTPOmWBfDnLo76RbZwwmlpLE",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n  \"customer_id\": 1,\r\n  \"value\": 25000,\r\n  \"expected_close_date\": \"2026-03-10\",\r\n  \"stage\": \"prospect\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost/mondaycomcrm/apis/deals/active_deals/create.php",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "path": [
+                        "mondaycomcrm",
+                        "apis",
+                        "deals",
+                        "active_deals",
+                        "create.php"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "list.php",
+                  "request": {
+                    "method": "GET",
+                    "header": []
+                  },
+                  "response": []
+                },
+                {
+                  "name": "view.php",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU3NDYsImV4cCI6MTc3MTkxMjE0NiwiZGF0YSI6eyJpZCI6NCwibmFtZSI6IkJhbGEiLCJlbWFpbCI6IkJhbGFAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyeSQxMCQuVi9wSDU0LmVaMG1KZC96TWdhNUp1dnZCZS9WbThOV2NYem1XWHhYWDZhSVN2M0g1QjdjZSIsInJvbGUiOiJzYWxlcyJ9fQ.bAEozXm9tVjWp0iucZvI3FNcydCt7cSifoe5XzMqD04",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost/mondaycomcrm/apis/deals/active_deals/view.php?deal_id=9",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "path": [
+                        "mondaycomcrm",
+                        "apis",
+                        "deals",
+                        "active_deals",
+                        "view.php"
+                      ],
+                      "query": [
+                        {
+                          "key": "deal_id",
+                          "value": "9"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "update.php",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU1NTUsImV4cCI6MTc3MTkxMTk1NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.FDIfaYLJqwkkBtS01JKZq-olsKynqOcQNJJ3vcFgibA",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n  \"deal_id\": 7,\r\n  \"stage\": \"lost\"\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost/mondaycomcrm/apis/deals/active_deals/update.php",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "path": [
+                        "mondaycomcrm",
+                        "apis",
+                        "deals",
+                        "active_deals",
+                        "update.php"
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "delete.php",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjM1MDEsImV4cCI6MTc3MTkwOTkwMSwiZGF0YSI6eyJpZCI6MSwibmFtZSI6IlFhZHMiLCJlbWFpbCI6IlFhZHNAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyeSQxMCRPRDVaWkpONTcxS3JZZUtTNHJVNXEucnhLUzFqaVFNT2hlMkh5Ym5QNGZsaGx2d3lOeTVzYSIsInJvbGUiOiJhZG1pbiJ9fQ.cHwpGx-nFqXiif2BuSoYJSaGVvS60hdsVqNqz77L7MA",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "DELETE",
+                    "header": [],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\r\n  \"deal_id\": 8\r\n}",
+                      "options": {
+                        "raw": {
+                          "language": "json"
+                        }
+                      }
+                    },
+                    "url": {
+                      "raw": "http://localhost/mondaycomcrm/apis/deals/active_deals/delete.php",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "path": [
+                        "mondaycomcrm",
+                        "apis",
+                        "deals",
+                        "active_deals",
+                        "delete.php"
+                      ]
+                    }
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "deals_won",
+              "item": [
+                {
+                  "name": "view.php",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost/mondaycomcrm/apis/deals/deals_won/view.php?q=2",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "path": [
+                        "mondaycomcrm",
+                        "apis",
+                        "deals",
+                        "deals_won",
+                        "view.php"
+                      ],
+                      "query": [
+                        {
+                          "key": "q",
+                          "value": "2"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "list.php",
+                  "request": {
+                    "method": "GET",
+                    "header": []
+                  },
+                  "response": []
+                }
+              ]
+            },
+            {
+              "name": "deals_lost",
+              "item": [
+                {
+                  "name": "list.php",
+                  "request": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "http://localhost/mondaycomcrm/apis/deals/deals_lost/list.php?q=2",
+                      "protocol": "http",
+                      "host": [
+                        "localhost"
+                      ],
+                      "path": [
+                        "mondaycomcrm",
+                        "apis",
+                        "deals",
+                        "deals_lost",
+                        "list.php"
+                      ],
+                      "query": [
+                        {
+                          "key": "q",
+                          "value": "2"
+                        }
+                      ]
+                    }
+                  },
+                  "response": []
+                },
+                {
+                  "name": "view.php",
+                  "request": {
+                    "method": "GET",
+                    "header": []
+                  },
+                  "response": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "product",
+          "item": [
+            {
+              "name": "create.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "import.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "update.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "list.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/product/list.php?q=1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "product",
+                    "list.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "view.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "delete.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "leads",
+          "item": [
+            {
+              "name": "register.php",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"name\": \"sriram\",\r\n  \"phone\": \"9888553210\",\r\n  \"email\": \"sriram@gmail.com\",\r\n  \"product_id\": 19,\r\n  \"source_name\": \"Website\",\r\n  \"message\": \"Interested. Please call me.\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/leads/register.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "leads",
+                    "register.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "assign_update.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE2NTI0MDksImV4cCI6MTc3MTczODgwOSwiZGF0YSI6eyJpZCI6MSwibmFtZSI6IlFhZHMiLCJlbWFpbCI6IlFhZHNAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyeSQxMCRPRDVaWkpONTcxS3JZZUtTNHJVNXEucnhLUzFqaVFNT2hlMkh5Ym5QNGZsaGx2d3lOeTVzYSIsInJvbGUiOiJhZG1pbiJ9fQ.Kebti_PyqyneBnc-j3f-T9unslCfx0wUa-i4UAFJyfg",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"lead_id\": 1,\r\n  \r\n  \"status\": \"contacted\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/leads/assign_update.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "leads",
+                    "assign_update.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "list.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "view.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/leads/view.php?id=2",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "leads",
+                    "view.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "id",
+                      "value": "2"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "import.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "update.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"lead_id\": 4,\r\n  \"status\": \"lost\",\r\n  \"message\": \"Interested\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/leads/update.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "leads",
+                    "update.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "assign.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "users",
+          "item": [
+            {
+              "name": "list.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "update.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "customer",
+          "item": [
+            {
+              "name": "create.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "assign.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "import.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "list.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjM1MDEsImV4cCI6MTc3MTkwOTkwMSwiZGF0YSI6eyJpZCI6MSwibmFtZSI6IlFhZHMiLCJlbWFpbCI6IlFhZHNAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyeSQxMCRPRDVaWkpONTcxS3JZZUtTNHJVNXEucnhLUzFqaVFNT2hlMkh5Ym5QNGZsaGx2d3lOeTVzYSIsInJvbGUiOiJhZG1pbiJ9fQ.cHwpGx-nFqXiif2BuSoYJSaGVvS60hdsVqNqz77L7MA",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/customer/list.php?q=kumar",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "customer",
+                    "list.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "kumar"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "view.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjM1MDEsImV4cCI6MTc3MTkwOTkwMSwiZGF0YSI6eyJpZCI6MSwibmFtZSI6IlFhZHMiLCJlbWFpbCI6IlFhZHNAbWFpbC5jb20iLCJwYXNzd29yZCI6IiQyeSQxMCRPRDVaWkpONTcxS3JZZUtTNHJVNXEucnhLUzFqaVFNT2hlMkh5Ym5QNGZsaGx2d3lOeTVzYSIsInJvbGUiOiJhZG1pbiJ9fQ.cHwpGx-nFqXiif2BuSoYJSaGVvS60hdsVqNqz77L7MA",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/customer/view.php?q=7",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "customer",
+                    "view.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "7"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "delete.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "leads_lost",
+          "item": [
+            {
+              "name": "list.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/leads_lost/list.php?q=9123456780",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "leads_lost",
+                    "list.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "9123456780"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "view.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/leads_lost/view.php?id=2",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "leads_lost",
+                    "view.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "id",
+                      "value": "2"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "followups",
+          "item": [
+            {
+              "name": "create.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE2NTg1OTksImV4cCI6MTc3MTc0NDk5OSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.T0tVj8_LKQ5_chw5NKdznr4ca7w86p0nKA_IVjbnQSM",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"customer_id\": 1,\r\n  \"type\": \"call\",\r\n  \"notes\": \"Call back tomorrow\",\r\n  \"next_followup_date\": \"2026-02-22 10:30:00\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/followups/create.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "followups",
+                    "create.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "delete.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"id\":2\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/followups/delete.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "followups",
+                    "delete.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "list.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/followups/list.php?q=call",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "followups",
+                    "list.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "q",
+                      "value": "call"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "view.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "update.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"id\": 1,\r\n  \"status\": \"done\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/followups/update.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "followups",
+                    "update.php"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "notes",
+          "item": [
+            {
+              "name": "create.php",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE2NTMyMjAsImV4cCI6MTc3MTczOTYyMCwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.5JzglNUJdO-Z5lf4x-6cWZ9kasUa2WFGtvFkhLfS_a4",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"entity_type\": \"customer\",\r\n  \"entity_id\": 1,\r\n  \"note\": \"Customer called, wants discount\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/notes/create.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "notes",
+                    "create.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "delete.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"id\":2\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/notes/delete.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "notes",
+                    "delete.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "list.php",
+              "protocolProfileBehavior": {
+                "disableBodyPruning": true
+              },
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"entity_type\":\"customer\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/notes/list.php?entity_type=customer&entity_id=1",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "notes",
+                    "list.php"
+                  ],
+                  "query": [
+                    {
+                      "key": "entity_type",
+                      "value": "customer"
+                    },
+                    {
+                      "key": "entity_id",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "quotations",
+          "item": [
+            {
+              "name": "create.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "list.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "delete.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "view.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            },
+            {
+              "name": "update_status.php",
+              "request": {
+                "method": "GET",
+                "header": []
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "dashboard",
+          "item": [
+            {
+              "name": "lead_source.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/dashboard/lead_source.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "dashboard",
+                    "lead_source.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "pipeline_stage.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/dashboard/pipeline_stage.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "dashboard",
+                    "pipeline_stage.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "summary.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/dashboard/summary.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "dashboard",
+                    "summary.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "top_sales.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/dashboard/top_sales.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "dashboard",
+                    "top_sales.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "upcomming.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/dashboard/upcomming.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "dashboard",
+                    "upcomming.php"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "won_lost_trend.php",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJsb2NhbGhvc3QiLCJhdWQiOiJsb2NhbGhvc3QiLCJpYXQiOjE3NzE4MjU5ODUsImV4cCI6MTc3MTkxMjM4NSwiZGF0YSI6eyJpZCI6MiwibmFtZSI6IlJhZ3VsUmFqIiwiZW1haWwiOiJSYWd1bFJhakBtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJ5JDEwJHpyRUprWHRiU3E1UjZuTGFaVi5IcGVtbEg0d1FkMUpGckQwUTgzaDRHSFBTZGx5cmZUWmt1Iiwicm9sZSI6InNhbGVzIn19.UtruH3fKEP33JItp5Vf628aTwj_D7e3Plx8K0rXdyVY",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://localhost/mondaycomcrm/apis/dashboard/won_lost_trend.php",
+                  "protocol": "http",
+                  "host": [
+                    "localhost"
+                  ],
+                  "path": [
+                    "mondaycomcrm",
+                    "apis",
+                    "dashboard",
+                    "won_lost_trend.php"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
